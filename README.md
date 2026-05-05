@@ -1,28 +1,28 @@
-# Tech Professionals: Financial Behavior Study
+# Financial Behavior of Tech Professionals
 
-Exploratory analysis of financial satisfaction and spending patterns among
-data / analytics professionals, based on a 75-respondent anonymous survey.
+> Exploratory survey study of financial satisfaction and spending patterns among 75 data and analytics professionals — independent research, end-to-end from question design to publishing findings on social media.
 
-## Overview
+> 📅 2026 · Solo project · Independent research
+
+Exploratory analysis of financial satisfaction and spending patterns among data / analytics professionals, based on a 75-respondent anonymous survey.
+
+## TL;DR
+
+- **Independent research design:** designed a 12-question Google Form, distributed via professional network, collected 75 responses from data / analytics professionals (Intern → Head)
+- **Financial comfort plateaus around 250–300k RUB/month** — beyond that band, mean self-reported comfort barely moves; within-band variance often exceeds between-band gaps
+- **Food (57%), rent (44%), investments (35%)** dominate top-3 spending mentions
+- **49% report their salary "dissolves"** before month-end — twice as common among juniors / middles vs seniors
+- **11 visualizations + 2 wordclouds** built end-to-end in Python (pandas, seaborn, wordcloud), with hand-curated free-text categorization
+- **Findings shared on social media** as a translated thread, generating organic discussion in the Russian data community
+
+## Survey design
 
 - **Sample:** 75 respondents, mostly product / data analysts, ages 19–31+
-- **Grades represented:** Intern → Head (Middle and Junior dominate)
-- **Salary range:** <100k to 500k+ RUB per month, **net (after tax)**
-- **Collection:** Google Forms, twelve questions covering salary band, grade,
-  comfort level, emergency fund, extra income, top spending categories,
-  and two free-text prompts (`"most 'tech' purchase this year"` and
-  `"what did you start buying once salary grew"`)
-
-The raw survey (including respondent answers) is kept in the original Russian
-in [`survey_data.csv`](survey_data.csv). All analysis and chart labels are in English.
-
-> **About the salary numbers.** All salary figures in this repo —
-> in charts, tables and prose — are **monthly net (take-home) RUB**,
-> i.e. what respondents receive after Russian income tax (13–15% for
-> residents) and other deductions. This is the standard way salaries
-> are quoted in the Russian tech market, and differs from the Western
-> convention of annual gross. Rough conversion: 300k RUB/month net
-> ≈ 3.6M RUB/year net ≈ 4.14M RUB/year gross at 13% tax.
+- **Grades:** Intern → Head (Middle and Junior dominate)
+- **Salary range:** <100k to 500k+ RUB per month, net (after tax)
+- **Distribution:** Google Forms, distributed via Russian-speaking data / analytics community
+- **Questions:** 12 — covering salary band, grade, comfort level (1–10), emergency fund, extra income, top spending categories, plus two free-text prompts ("most 'tech' purchase this year" / "what did you start buying once salary grew")
+- **Languages:** raw responses kept in Russian (`survey_data.csv`); all analysis and chart labels in English
 
 ## Key findings
 
@@ -184,11 +184,19 @@ Charts are written to [`charts/`](charts/).
 | [`charts/`](charts/) | Generated visualizations |
 | [`requirements.txt`](requirements.txt) | Python dependencies |
 
-## Stack
+## Tech stack
 
-Python · pandas · matplotlib · seaborn · wordcloud
+| Category | Tools |
+|----------|-------|
+| Survey collection | Google Forms |
+| Data processing | Python, pandas |
+| Visualization | matplotlib, seaborn |
+| Word clouds | wordcloud (with Russian Cyrillic font support) |
+| Notebook | Jupyter |
 
----
+## Author
 
-*Survey was distributed to Russian-speaking colleagues in data / analytics;
-raw answers remain in Russian. Translations in this README are author's.*
+**Mary Rymar** — Data Analyst, Fraud & Risk Analytics  
+[LinkedIn](https://www.linkedin.com/in/rymarmary) · [GitHub](https://github.com/rymarmary)
+
+> Survey distributed to Russian-speaking colleagues in data / analytics; raw answers remain in Russian. All translations in this README are author's own.
